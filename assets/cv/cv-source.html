@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<title>CV Joni Hermawan</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #1a1f29;
+    font-size: 9.4pt;
+    line-height: 1.34;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 10mm 16mm 8mm 16mm;
+  }
+
+  /* Header */
+  .header { padding-bottom: 6px; border-bottom: 2.5px solid #2563eb; margin-bottom: 9px; }
+  .name { font-size: 21pt; font-weight: 800; letter-spacing: -0.3px; color: #10131a; margin: 0; }
+  .role { font-size: 10.5pt; font-weight: 600; color: #2563eb; margin: 2px 0 5px 0; }
+  .contact-line { font-size: 8.8pt; color: #4a5568; }
+  .contact-line span { white-space: nowrap; }
+  .contact-sep { color: #b7c0cc; margin: 0 7px; }
+
+  /* Section */
+  .section { margin-bottom: 6px; }
+  .section-title {
+    font-size: 9.2pt; font-weight: 800; letter-spacing: 0.9px; text-transform: uppercase;
+    color: #0d9488; margin: 0 0 4px 0; padding-bottom: 2px; border-bottom: 1px solid #dce1e8;
+  }
+
+  .summary { color: #33404f; text-align: justify; margin: 0; }
+
+  /* Experience */
+  .job { margin-bottom: 5px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-company { font-size: 8.8pt; color: #6b7688; font-style: italic; margin: 0 0 2px 0; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .job-title { font-size: 9.8pt; font-weight: 700; color: #10131a; }
+  .job-period { font-size: 8.6pt; font-weight: 700; color: #2563eb; white-space: nowrap; }
+  ul.bullets { margin: 2px 0 0 0; padding-left: 14px; }
+  ul.bullets li { margin-bottom: 1px; color: #33404f; }
+  ul.bullets li::marker { color: #0d9488; }
+  ul.bullets li strong { color: #10131a; }
+
+  /* Education */
+  .edu-title { font-size: 9.6pt; font-weight: 700; color: #10131a; margin: 0; }
+  .edu-sub { color: #4a5568; font-style: italic; margin: 1px 0 0 0; }
+
+  /* Skills */
+  .skill-row { margin: 0 0 2px 0; }
+  .skill-cat { font-weight: 700; color: #10131a; }
+  .skill-val { color: #33404f; }
+
+  /* Languages */
+  .lang-row span { font-weight: 700; color: #10131a; }
+  .lang-row .lvl { font-weight: 400; color: #4a5568; }
+  .lang-sep { color: #b7c0cc; margin: 0 10px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <p class="name">JONI HERMAWAN</p>
+    <p class="role">Senior IT System Engineer</p>
+    <p class="contact-line">
+      <span>joni.hermawan04@gmail.com</span><span class="contact-sep">•</span><span>+62 822-7934-6802</span><span class="contact-sep">•</span><span>Jatinegara, Jakarta Timur</span>
+    </p>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Ringkasan Profesional</p>
+    <p class="summary">IT System Engineer dengan 7+ tahun pengalaman membangun dan mengamankan infrastruktur TI skala enterprise, meniti karier dari operasional perangkat perbankan (QC &amp; konfigurasi keamanan mesin EDC) hingga Senior System Engineer. Berpengalaman menangani sistem keamanan pembayaran (HSM Payshield), memimpin migrasi infrastruktur legacy ke lingkungan yang lebih aman dan scalable, serta membangun sistem observability (Grafana/Prometheus) yang meningkatkan uptime server sebesar 15%. Perjalanan karier dari hardware perbankan tingkat lapangan hingga arsitektur infrastruktur senior menjadikan saya engineer yang memahami sistem keamanan transaksi secara menyeluruh — dari perangkat fisik hingga infrastruktur backend.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Pengalaman Kerja</p>
+
+    <div class="job">
+      <p class="job-company">PT Primavista Solusi — Jenjang karier internal selama 7+ tahun</p>
+      <div class="job-head">
+        <span class="job-title">Senior System Engineer</span>
+        <span class="job-period">2024 — Sekarang</span>
+      </div>
+      <ul class="bullets">
+        <li>Memimpin migrasi infrastruktur legacy ke lingkungan yang lebih aman dan scalable, menjadi acuan standar keamanan tim untuk proyek berikutnya.</li>
+        <li>Membangun sistem monitoring end-to-end berbasis Grafana dan Prometheus, meningkatkan <strong>uptime server sebesar 15%</strong> melalui deteksi dini dan resolusi proaktif.</li>
+        <li>Mengelola dan mengamankan <strong>Hardware Security Module (HSM Payshield)</strong> untuk transaksi pembayaran sesuai standar keamanan dan kepatuhan industri.</li>
+        <li>Penanggung jawab teknis lintas tim (infrastruktur, keamanan, operasional) dalam merancang standar kepatuhan TI dan mempercepat resolusi insiden kritis.</li>
+        <li>Menyusun dokumentasi operasional dan laporan performa infrastruktur, menjadi rujukan audit internal dan onboarding engineer baru.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Staff System Engineer</span>
+        <span class="job-period">2021 — 2024</span>
+      </div>
+      <ul class="bullets">
+        <li>Instalasi, konfigurasi, dan pemeliharaan infrastruktur TI (Windows Server, Linux/Ubuntu) untuk menjaga ketersediaan layanan operasional harian.</li>
+        <li>Troubleshooting teknis tingkat lanjut dan eskalasi utama untuk isu infrastruktur yang tidak terselesaikan tim operasional.</li>
+        <li>Berkolaborasi lintas tim merancang dan menerapkan perbaikan yang meningkatkan keandalan dan efisiensi infrastruktur.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Admin Preparation — EDC Device Operations</span>
+        <span class="job-period">2018 — 2021</span>
+      </div>
+      <ul class="bullets">
+        <li>Quality Control (QC) fisik dan fungsional pada mesin EDC sebelum didistribusikan ke merchant.</li>
+        <li>Instalasi software, injeksi security key, dan konfigurasi jaringan perbankan pada perangkat EDC — fondasi awal pemahaman keamanan transaksi pembayaran yang kemudian diperdalam melalui pengelolaan HSM Payshield.</li>
+        <li>Stock opname dan pengelolaan log perangkat EDC, distribusi kartu tes transaksi, serta koordinasi permintaan operasional dengan tim admin wilayah.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Pendidikan</p>
+    <p class="edu-title">Sarjana Sistem Informasi (S1)</p>
+    <p class="edu-sub">Institut Informatika dan Bisnis Darmajaya</p>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Keahlian Teknis</p>
+    <p class="skill-row"><span class="skill-cat">Infrastruktur &amp; OS:</span> <span class="skill-val">Windows Server 2016/2019/2025, Linux (Ubuntu)</span></p>
+    <p class="skill-row"><span class="skill-cat">Sistem Pembayaran &amp; Keamanan:</span> <span class="skill-val">Manajemen HSM Payshield, Standar Kepatuhan &amp; Keamanan TI</span></p>
+    <p class="skill-row"><span class="skill-cat">Monitoring &amp; Observabilitas:</span> <span class="skill-val">Grafana, Prometheus, Optimasi Performa</span></p>
+    <p class="skill-row"><span class="skill-cat">Cloud:</span> <span class="skill-val">AWS, Azure</span></p>
+    <p class="skill-row"><span class="skill-cat">Frontend &amp; Pengembangan Web:</span> <span class="skill-val">JavaScript, React, Next.js, Tailwind CSS, Python, Golang (dasar), NGINX</span></p>
+    <p class="skill-row"><span class="skill-cat">Lainnya:</span> <span class="skill-val">Troubleshooting &amp; Technical Support tingkat lanjut</span></p>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Bahasa</p>
+    <p class="lang-row"><span>Bahasa Indonesia</span> <span class="lvl">— Baik</span><span class="lang-sep">|</span><span>Bahasa Inggris</span> <span class="lvl">— Baik</span></p>
+  </div>
+
+</div>
+</body>
+</html>
