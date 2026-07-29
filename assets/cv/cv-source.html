@@ -10,27 +10,27 @@
     margin: 0; padding: 0;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     color: #1a1f29;
-    font-size: 9.4pt;
-    line-height: 1.34;
+    font-size: 9.3pt;
+    line-height: 1.28;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
   .page {
     width: 210mm;
     min-height: 297mm;
-    padding: 10mm 16mm 8mm 16mm;
+    padding: 7mm 16mm 5mm 16mm;
   }
 
   /* Header */
-  .header { padding-bottom: 6px; border-bottom: 2.5px solid #2563eb; margin-bottom: 9px; }
-  .name { font-size: 21pt; font-weight: 800; letter-spacing: -0.3px; color: #10131a; margin: 0; }
-  .role { font-size: 10.5pt; font-weight: 600; color: #2563eb; margin: 2px 0 5px 0; }
+  .header { padding-bottom: 5px; border-bottom: 2.5px solid #2563eb; margin-bottom: 7px; }
+  .name { font-size: 20pt; font-weight: 800; letter-spacing: -0.3px; color: #10131a; margin: 0; }
+  .role { font-size: 10.5pt; font-weight: 600; color: #2563eb; margin: 2px 0 4px 0; }
   .contact-line { font-size: 8.8pt; color: #4a5568; }
   .contact-line span { white-space: nowrap; }
   .contact-sep { color: #b7c0cc; margin: 0 7px; }
 
   /* Section */
-  .section { margin-bottom: 6px; }
+  .section { margin-bottom: 4px; }
   .section-title {
     font-size: 9.2pt; font-weight: 800; letter-spacing: 0.9px; text-transform: uppercase;
     color: #0d9488; margin: 0 0 4px 0; padding-bottom: 2px; border-bottom: 1px solid #dce1e8;
@@ -59,6 +59,12 @@
   .skill-cat { font-weight: 700; color: #10131a; }
   .skill-val { color: #33404f; }
 
+  /* Projects */
+  .project-row { margin: 0 0 2.5px 0; }
+  .project-name { font-weight: 700; color: #10131a; }
+  .project-tech { color: #6b7688; font-style: italic; }
+  .project-desc { color: #33404f; }
+
   /* Languages */
   .lang-row span { font-weight: 700; color: #10131a; }
   .lang-row .lvl { font-weight: 400; color: #4a5568; }
@@ -70,7 +76,7 @@
 
   <div class="header">
     <p class="name">JONI HERMAWAN</p>
-    <p class="role">Senior IT System Engineer</p>
+    <p class="role">Full-Stack Developer</p>
     <p class="contact-line">
       <span>joni.hermawan04@gmail.com</span><span class="contact-sep">•</span><span>+62 822-7934-6802</span><span class="contact-sep">•</span><span>Jatinegara, Jakarta Timur</span>
     </p>
@@ -78,7 +84,14 @@
 
   <div class="section">
     <p class="section-title">Ringkasan Profesional</p>
-    <p class="summary">IT System Engineer dengan 7+ tahun pengalaman membangun dan mengamankan infrastruktur TI skala enterprise, meniti karier dari operasional perangkat perbankan (QC &amp; konfigurasi keamanan mesin EDC) hingga Senior System Engineer. Berpengalaman menangani sistem keamanan pembayaran (HSM Payshield), memimpin migrasi infrastruktur legacy ke lingkungan yang lebih aman dan scalable, serta membangun sistem observability (Grafana/Prometheus) yang meningkatkan uptime server sebesar 15%. Perjalanan karier dari hardware perbankan tingkat lapangan hingga arsitektur infrastruktur senior menjadikan saya engineer yang memahami sistem keamanan transaksi secara menyeluruh — dari perangkat fisik hingga infrastruktur backend.</p>
+    <p class="summary">Full-Stack Developer dengan fondasi 7+ tahun sebagai Senior IT System Engineer di infrastruktur TI skala enterprise. Membangun aplikasi web full-stack menggunakan Next.js, React, dan Golang, memadukan pemahaman backend, database, dan keamanan sistem yang jarang dimiliki developer lain — termasuk pengalaman langsung mengelola Hardware Security Module (HSM Payshield) dan memimpin migrasi infrastruktur yang meningkatkan uptime server sebesar 15%. Kombinasi latar belakang ini memberi perspektif menyeluruh dalam merancang aplikasi yang aman, scalable, dan siap produksi.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Proyek Pilihan</p>
+    <p class="project-row"><span class="project-name">Nota POS</span> <span class="project-tech">(Next.js, Golang, SQL Server)</span> — <span class="project-desc">Sistem kasir multi-role dengan integrasi pembayaran QRIS &amp; EDC dan cetak struk thermal.</span></p>
+    <p class="project-row"><span class="project-name">TDS</span> <span class="project-tech">(Python, Pandas, JavaScript)</span> — <span class="project-desc">Tools pembersihan &amp; standardisasi 60.000+ data Serial Number EDC, dipakai tim operasional sehari-hari.</span></p>
+    <p class="project-row"><span class="project-name">Web Project Management Dashboard</span> <span class="project-tech">(Next.js, Golang, SQL Server)</span> — <span class="project-desc">Dashboard manajemen proyek dengan migrasi arsitektur dari Vite ke Next.js App Router.</span></p>
   </div>
 
   <div class="section">
@@ -132,12 +145,9 @@
 
   <div class="section">
     <p class="section-title">Keahlian Teknis</p>
-    <p class="skill-row"><span class="skill-cat">Infrastruktur &amp; OS:</span> <span class="skill-val">Windows Server 2016/2019/2025, Linux (Ubuntu)</span></p>
-    <p class="skill-row"><span class="skill-cat">Sistem Pembayaran &amp; Keamanan:</span> <span class="skill-val">Manajemen HSM Payshield, Standar Kepatuhan &amp; Keamanan TI</span></p>
-    <p class="skill-row"><span class="skill-cat">Monitoring &amp; Observabilitas:</span> <span class="skill-val">Grafana, Prometheus, Optimasi Performa</span></p>
-    <p class="skill-row"><span class="skill-cat">Cloud:</span> <span class="skill-val">AWS, Azure</span></p>
-    <p class="skill-row"><span class="skill-cat">Frontend &amp; Pengembangan Web:</span> <span class="skill-val">JavaScript, React, Next.js, Tailwind CSS, Python, Golang (dasar), NGINX</span></p>
-    <p class="skill-row"><span class="skill-cat">Lainnya:</span> <span class="skill-val">Troubleshooting &amp; Technical Support tingkat lanjut</span></p>
+    <p class="skill-row"><span class="skill-cat">Web Development:</span> <span class="skill-val">JavaScript, React, Next.js, Tailwind CSS, HTML5/CSS3, JWT Auth</span></p>
+    <p class="skill-row"><span class="skill-cat">Backend &amp; Database:</span> <span class="skill-val">Golang, SQL Server, Desain REST API</span></p>
+    <p class="skill-row"><span class="skill-cat">Infrastruktur &amp; Keamanan:</span> <span class="skill-val">Linux/Windows Server, AWS/Azure, HSM Payshield, Grafana/Prometheus, Standar Kepatuhan &amp; Keamanan TI, Python, NGINX</span></p>
   </div>
 
   <div class="section">
