@@ -162,7 +162,8 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-2) 25%, transparent); }
 
 .hero h1 { font-size: clamp(2.4rem, 4.5vw, 3.4rem); font-weight: 800; letter-spacing: -1.5px; line-height: 1.05; }
-.hero .role { margin-top: 12px; font-size: 18px; font-weight: 600; color: var(--accent); }
+.hero .role-title { margin-top: 12px; font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 800; letter-spacing: -0.3px; color: var(--accent); line-height: 1.15; }
+.hero .role-subtitle { margin-top: 5px; font-size: 15px; font-weight: 500; color: var(--text-muted); }
 .hero .tagline { margin-top: 16px; font-size: 16px; color: var(--text-muted); max-width: 56ch; }
 .hero .tagline strong { color: var(--text); }
 .hero .tagline-secondary { margin-top: 12px; font-size: 15px; }
