@@ -263,6 +263,8 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .skill-card-highlight { background: linear-gradient(150deg, var(--surface), color-mix(in srgb, var(--accent) 6%, var(--surface))); border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+.skill-card-wide { grid-column: 1 / -1; }
+.skill-card-wide .tags { max-width: 640px; }
 .skill-icon {
   width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; margin-bottom: 14px;
   background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent);
