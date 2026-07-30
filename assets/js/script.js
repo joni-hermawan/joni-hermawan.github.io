@@ -20,6 +20,11 @@
 
   /* ---------- Language toggle ---------- */
   var langToggle = document.getElementById("langToggle");
+  var CV_FILES = {
+    id: "assets/cv/CV_Joni_Hermawan_Indonesia.pdf",
+    en: "assets/cv/CV_Joni_Hermawan_English.pdf"
+  };
+  var cvDownloadLinks = document.querySelectorAll(".cv-download");
   var savedLang = localStorage.getItem("lang") || "id";
   setLang(savedLang);
 
@@ -33,6 +38,9 @@
     html.classList.remove("is-id", "is-en");
     html.classList.add("is-" + lang);
     html.setAttribute("lang", lang);
+    cvDownloadLinks.forEach(function (link) {
+      link.setAttribute("href", CV_FILES[lang]);
+    });
   }
 
   /* ---------- Mobile nav ---------- */
